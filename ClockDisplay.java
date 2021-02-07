@@ -12,7 +12,7 @@
  * @author Michael Kölling and David J. Barnes
  * @version 2016.02.29
  */
-public class ClockDisplay 
+public class ClockDisplay
 {
     private NumberDisplay hours;
     private NumberDisplay minutes;
