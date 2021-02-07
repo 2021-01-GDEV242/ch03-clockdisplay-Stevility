@@ -78,6 +78,7 @@ public class ClockDisplay12Hour
      */
     private void updateDisplay()
     {
+        //This version is easier and more accurate.
         int hour = hours.getValue();
         String suffix;
         //AM/PM
