@@ -91,6 +91,10 @@ public class ClockDisplay12Hour
         if(hour >= 12) {
             hour -=12;
         }
+        //12:00 hour instead of 00:00
+        if(hour == 0) {
+            hour = 12;
+        }
         displayString = hour + ":" + 
                         minutes.getDisplayValue();
     }
