@@ -78,6 +78,15 @@ public class ClockDisplay12Hour
      */
     private void updateDisplay()
     {
+        int hour = hours.getValue();
+        String suffix;
+        
+        if(hour >= 12) {
+            suffix = "pm";
+        }
+        else {
+            suffix = "am";
+        }
         displayString = hours.getDisplayValue() + ":" + 
                         minutes.getDisplayValue();
     }
