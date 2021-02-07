@@ -80,14 +80,18 @@ public class ClockDisplay12Hour
     {
         int hour = hours.getValue();
         String suffix;
-        
+        //AM/PM
         if(hour >= 12) {
             suffix = "pm";
         }
         else {
             suffix = "am";
         }
-        displayString = hours.getDisplayValue() + ":" + 
+        //subtract hour of afternoon times
+        if(hour >= 12) {
+            hour -=12;
+        }
+        displayString = hour + ":" + 
                         minutes.getDisplayValue();
     }
 }
