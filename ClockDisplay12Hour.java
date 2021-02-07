@@ -12,7 +12,7 @@
  * @author Michael Kölling and David J. Barnes
  * @version 2016.02.29
  */
-public class ClockDisplay12Hour
+public class ClockDisplay12Hour 
 {
     private NumberDisplay hours;
     private NumberDisplay minutes;
@@ -24,7 +24,7 @@ public class ClockDisplay12Hour
      */
     public ClockDisplay12Hour()
     {
-        hours = new NumberDisplay(24);
+        hours = new NumberDisplay(13);
         minutes = new NumberDisplay(60);
         updateDisplay();
     }
@@ -36,7 +36,7 @@ public class ClockDisplay12Hour
      */
     public ClockDisplay12Hour(int hour, int minute)
     {
-        hours = new NumberDisplay(24);
+        hours = new NumberDisplay(13);
         minutes = new NumberDisplay(60);
         setTime(hour, minute);
     }
